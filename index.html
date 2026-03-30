@@ -1,1219 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cathey's Lawn Care provides premium lawn mowing, tree trimming, land clearing, mulching, and weed control services in Austin, TX and surrounding areas. Family-owned with 10+ years of experience.">
-    <meta name="keywords" content="lawn care austin, lawn mowing austin tx, tree trimming austin, land clearing austin, mulching austin, weed control austin, landscaping austin tx">
-    <meta name="author" content="Cathey's Lawn Care">
-    <meta name="robots" content="index, follow">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cathey's Lawn Care | Professional Lawn Services in Austin, TX</title>
+  <meta name="description" content="Cathey's Lawn Care - Austin's trusted family-owned lawn service. Mowing, tree trimming, mulching, land clearing & more. 10+ years experience. Free estimates! Call (512) 413-8455.">
+  <link rel="canonical" href="https://catheys-lawn-care.netlify.app">
+  <link rel="icon" type="image/png" href="images/logo-cropped.png">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Cathey's Lawn Care | Premium Lawn Services in Austin, TX">
-    <meta property="og:description" content="Family-owned lawn care with 10+ years of experience. Lawn mowing, tree trimming, land clearing, mulching, and more in Austin and surrounding areas.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://catheys-lawn-care.netlify.app">
-    <meta property="og:image" content="https://catheys-lawn-care.netlify.app/images/logo-cropped.png">
-    <meta property="og:locale" content="en_US">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Cathey's Lawn Care | Austin TX Lawn Service">
+  <meta property="og:description" content="Family-owned lawn care serving Austin TX for 10+ years. Free estimates!">
+  <meta property="og:image" content="https://catheys-lawn-care.netlify.app/images/header-background.jpg">
+  <meta property="og:url" content="https://catheys-lawn-care.netlify.app">
+  <meta property="og:type" content="website">
 
-    <!-- Canonical -->
-    <link rel="canonical" href="https://catheys-lawn-care.netlify.app">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="images/logo-cropped.png">
+  <link rel="stylesheet" href="css/style.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Cathey's Lawn Care | Premium Lawn Services in Austin, TX</title>
-
-    <!-- Schema.org LocalBusiness JSON-LD -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Cathey's Lawn Care",
-        "description": "Premium lawn care and landscaping services in Austin, TX. Family-owned with 10+ years of experience.",
-        "url": "https://catheys-lawn-care.netlify.app",
-        "telephone": "+15124138455",
-        "email": "catheyslandscapes@gmail.com",
-        "image": "https://catheys-lawn-care.netlify.app/images/logo-cropped.png",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Austin",
-            "addressRegion": "TX",
-            "addressCountry": "US"
-        },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 30.2672,
-            "longitude": -97.7431
-        },
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-            "opens": "08:00",
-            "closes": "18:00"
-        },
-        "areaServed": [
-            "Austin, TX",
-            "Round Rock, TX",
-            "Leander, TX",
-            "Lakeway, TX",
-            "Cedar Park, TX",
-            "Pflugerville, TX",
-            "Georgetown, TX"
-        ],
-        "priceRange": "$$",
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "reviewCount": "200"
-        }
-    }
-    </script>
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Cathey's Lawn Care",
+    "url": "https://catheys-lawn-care.netlify.app",
+    "telephone": "(512) 413-8455",
+    "email": "catheyslandscapes@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Austin", "addressRegion": "TX", "addressCountry": "US" },
+    "areaServed": ["Austin, TX","Round Rock, TX","Leander, TX","Lakeway, TX","Cedar Park, TX","Pflugerville, TX","Georgetown, TX"],
+    "openingHours": "Mo-Su 08:00-18:00",
+    "priceRange": "$$",
+    "description": "Family-owned lawn care company serving Austin TX and surrounding areas for 10+ years.",
+    "sameAs": ["https://www.facebook.com/CatheysLawnCareAustin/","https://www.yelp.com/biz/catheys-lawn-care-austin-4"]
+  }
+  </script>
 </head>
 <body>
 
-    <!-- ============================================================
-         NAVIGATION
-         ============================================================ -->
-    <header class="navbar">
-        <div class="container">
-            <a href="#home" class="nav-logo">
-                <img src="images/logo-cropped.png" alt="Cathey's Lawn Care logo" width="45" height="45">
-                <div class="logo-text">Cathey's <span>Lawn Care</span></div>
-            </a>
-
-            <nav class="nav-links">
-                <a href="#home" class="active">Home</a>
-                <a href="#services">Services</a>
-                <a href="#about">About</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#testimonials">Reviews</a>
-                <a href="#contact">Contact</a>
-            </nav>
-
-            <div class="nav-cta">
-                <a href="tel:+15124138455" class="nav-phone">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
-                    (512) 413-8455
-                </a>
-                <a href="#contact" class="btn btn-primary">Free Estimate</a>
-            </div>
-
-            <button class="nav-hamburger" aria-label="Toggle navigation menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
-
-    <!-- Mobile Overlay -->
-    <div class="nav-mobile-overlay">
-        <a href="#home">Home</a>
-        <a href="#services">Services</a>
-        <a href="#about">About</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#testimonials">Reviews</a>
-        <a href="#contact">Contact</a>
-        <a href="tel:+15124138455" class="mobile-cta">Call (512) 413-8455</a>
-    </div>
-
-    <main>
-
-        <!-- ============================================================
-             HERO SECTION
-             ============================================================ -->
-        <section class="hero" id="home">
-            <div class="hero-grid">
-                <!-- Left Column -->
-                <div class="hero-content">
-                    <div class="hero-badge">
-                        <span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
-                        </span>
-                        Austin's Trusted Lawn Care Experts
-                    </div>
-
-                    <h1 class="hero-title">Premium Lawn Care for Your <span class="accent-word">Beautiful</span> Home</h1>
-
-                    <p class="hero-subtitle">Family-owned and operated with over 10 years of experience. From routine mowing to complete land clearing, no job is too big or small.</p>
-
-                    <div class="hero-cta-group">
-                        <a href="#contact" class="btn btn-primary btn-lg">Get Free Estimate</a>
-                        <a href="#services" class="btn btn-secondary btn-lg">Our Services</a>
-                    </div>
-
-                    <div class="hero-stats">
-                        <div class="hero-stat">
-                            <div class="stat-number">10+</div>
-                            <div class="stat-label">Years Experience</div>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Happy Clients</div>
-                        </div>
-                        <div class="hero-stat-divider"></div>
-                        <div class="hero-stat">
-                            <div class="stat-number">4.9</div>
-                            <div class="stat-label">Star Rating</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column -->
-                <div class="hero-visual">
-                    <div class="hero-image-wrapper">
-                        <img src="images/lawn-mowing-1.png" alt="Beautiful freshly mowed lawn by Cathey's Lawn Care in Austin, TX" width="600" height="500">
-                    </div>
-
-                    <div class="hero-floating-card card-top">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                        </div>
-                        <div class="card-text">
-                            <strong>Licensed &amp; Insured</strong>
-                            <span>Full peace of mind</span>
-                        </div>
-                    </div>
-
-                    <div class="hero-floating-card card-bottom">
-                        <div class="card-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-                        </div>
-                        <div class="card-text">
-                            <strong>5-Star Rated</strong>
-                            <span>200+ reviews</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Background Decorations -->
-            <div class="gradient-orb"></div>
-            <div class="gradient-orb accent"></div>
-        </section>
-
-        <!-- ============================================================
-             PAIN POINTS SECTION
-             ============================================================ -->
-        <section class="pain-points section-padding" id="problems">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
-                        Common Lawn Problems
-                    </div>
-                    <h2>Tired of Dealing With These <span class="accent-word">Headaches</span>?</h2>
-                    <p>You have better things to do than stress about your yard. Let us handle the hard work so you can enjoy your outdoor space.</p>
-                </div>
-
-                <div class="pain-points-grid">
-                    <div class="pain-card fade-up">
-                        <div class="pain-card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"></path><path d="M8 15s1.5-2 4-2 4 2 4 2"></path><circle cx="9" cy="9" r="1"></circle><circle cx="15" cy="9" r="1"></circle></svg>
-                        </div>
-                        <h4>Overgrown &amp; Embarrassing Yard</h4>
-                        <p>Tall grass, weeds taking over, and a yard that makes you cringe every time you pull into the driveway.</p>
-                    </div>
-
-                    <div class="pain-card fade-up">
-                        <div class="pain-card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                        </div>
-                        <h4>No Time for Yard Work</h4>
-                        <p>Between work, family, and life, the last thing you want to spend your weekend on is mowing and trimming.</p>
-                    </div>
-
-                    <div class="pain-card fade-up">
-                        <div class="pain-card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                        </div>
-                        <h4>Dangerous Tree Limbs</h4>
-                        <p>Dead or overgrown branches hanging over your roof, power lines, or play areas that pose a real safety risk.</p>
-                    </div>
-
-                    <div class="pain-card fade-up">
-                        <div class="pain-card-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><line x1="9" y1="12" x2="15" y2="12"></line></svg>
-                        </div>
-                        <h4>Unreliable Lawn Services</h4>
-                        <p>Tired of companies that no-show, overcharge, or do sloppy work? You deserve a team that actually cares.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             SERVICES SECTION
-             ============================================================ -->
-        <section class="services section-padding" id="services">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
-                        Our Services
-                    </div>
-                    <h2>Professional Lawn &amp; Landscape <span class="accent-word">Services</span></h2>
-                    <p>From routine maintenance to complete property transformations, we have you covered. No job too big or small.</p>
-                </div>
-
-                <div class="services-grid">
-                    <!-- Service 1: Lawn Mowing -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/lawn-mowing-1.png" alt="Professional lawn mowing service in Austin, TX" loading="lazy" width="400" height="280">
-                            <span class="service-tag">Most Popular</span>
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Lawn Mowing</h3>
-                            <p>Professional mowing, edging, and trimming to keep your lawn looking pristine all season long.</p>
-                            <div class="service-features">
-                                <span>Mowing</span>
-                                <span>Edging</span>
-                                <span>Trimming</span>
-                                <span>Blowing</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Service 2: Spring & Fall Clean Ups -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/clean-ups-1.png" alt="Spring and fall yard clean up service in Austin" loading="lazy" width="400" height="280">
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Spring &amp; Fall Clean Ups</h3>
-                            <p>Comprehensive seasonal clean ups including debris removal, leaf cleanup, and landscape restoration.</p>
-                            <div class="service-features">
-                                <span>Leaf Removal</span>
-                                <span>Debris Cleanup</span>
-                                <span>Bed Clearing</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Service 3: Tree Trimming -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/tree-trimming-1.png" alt="Professional tree trimming and removal in Austin, TX" loading="lazy" width="400" height="280">
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Tree Trimming</h3>
-                            <p>Expert tree trimming and removal to keep your property safe and your trees healthy year-round.</p>
-                            <div class="service-features">
-                                <span>Trimming</span>
-                                <span>Removal</span>
-                                <span>Shaping</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Service 4: Mulching -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/mulching-1.png" alt="Mulching and landscape bed maintenance in Austin" loading="lazy" width="400" height="280">
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Mulching</h3>
-                            <p>Quality mulch installation to protect your plants, retain moisture, and give your beds a polished look.</p>
-                            <div class="service-features">
-                                <span>Installation</span>
-                                <span>Bed Prep</span>
-                                <span>Weed Barrier</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Service 5: Land Clearing -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/land-clearing-1.png" alt="Land clearing and brush removal service in Austin, TX" loading="lazy" width="400" height="280">
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Land Clearing</h3>
-                            <p>Complete land clearing for overgrown lots, new construction prep, or property line restoration.</p>
-                            <div class="service-features">
-                                <span>Brush Removal</span>
-                                <span>Lot Clearing</span>
-                                <span>Hauling</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Service 6: Weed Control -->
-                    <div class="service-card fade-up">
-                        <div class="service-card-image">
-                            <img src="images/weed-control-1.png" alt="Weed control and prevention service in Austin" loading="lazy" width="400" height="280">
-                        </div>
-                        <div class="service-card-content">
-                            <h3>Weed Control</h3>
-                            <p>Effective weed treatment and prevention to keep your lawn healthy, green, and weed-free all year.</p>
-                            <div class="service-features">
-                                <span>Treatment</span>
-                                <span>Prevention</span>
-                                <span>Fertilization</span>
-                            </div>
-                            <a href="#contact" class="service-link">
-                                Get a Quote
-                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             WHY CHOOSE US SECTION
-             ============================================================ -->
-        <section class="why-choose section-padding" id="about">
-            <div class="container">
-                <div class="why-choose-grid">
-                    <!-- Left Column -->
-                    <div class="why-choose-content">
-                        <div class="section-badge">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-                            Why Choose Us
-                        </div>
-                        <h2>Austin's Most Trusted <span class="accent-word">Lawn Care</span> Team</h2>
-                        <p>Owned and operated by Doug Cathey, we treat every property like it's our own. With over a decade of experience and hundreds of satisfied customers, we deliver results you can see and feel.</p>
-
-                        <div class="why-choose-features">
-                            <div class="why-feature-item">
-                                <div class="feature-check">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>Family-Owned Business</h4>
-                                    <p>Personal attention and accountability on every job.</p>
-                                </div>
-                            </div>
-
-                            <div class="why-feature-item">
-                                <div class="feature-check">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>Licensed &amp; Insured</h4>
-                                    <p>Fully covered for your complete peace of mind.</p>
-                                </div>
-                            </div>
-
-                            <div class="why-feature-item">
-                                <div class="feature-check">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>Fast Response Time</h4>
-                                    <p>Quick quotes and rapid scheduling for your convenience.</p>
-                                </div>
-                            </div>
-
-                            <div class="why-feature-item">
-                                <div class="feature-check">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                                </div>
-                                <div class="feature-text">
-                                    <h4>No Job Too Big or Small</h4>
-                                    <p>From weekly mowing to full land clearing projects.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="why-choose-stats">
-                            <div class="why-stat-item">
-                                <div class="stat-number">10+</div>
-                                <div class="stat-label">Years in Business</div>
-                            </div>
-                            <div class="why-stat-item">
-                                <div class="stat-number">500+</div>
-                                <div class="stat-label">Properties Served</div>
-                            </div>
-                            <div class="why-stat-item">
-                                <div class="stat-number">100%</div>
-                                <div class="stat-label">Satisfaction Goal</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column -->
-                    <div class="why-choose-visual">
-                        <div class="comparison-wrapper">
-                            <img src="images/about-bg.jpg" alt="Cathey's Lawn Care team at work transforming an Austin property" loading="lazy" width="600" height="450">
-                            <div class="comparison-label before">Before</div>
-                            <div class="comparison-label after">After</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             TESTIMONIALS SECTION
-             ============================================================ -->
-        <section class="testimonials section-padding" id="testimonials">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path></svg>
-                        Testimonials
-                    </div>
-                    <h2>What Our Clients <span class="accent-word">Say</span></h2>
-                    <p>Don't just take our word for it. Here's what Austin homeowners have to say about working with Cathey's Lawn Care.</p>
-                </div>
-
-                <div class="testimonials-grid">
-                    <!-- Featured Testimonial -->
-                    <div class="testimonial-card featured fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">My lawn was an absolute mess — weeds everywhere, leaves everywhere, grass out of control. Doug and his team were exactly on time and did exactly what I asked. Five stars!</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=Misha+A&background=5a9a6e&color=fff&size=48" alt="Misha A. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Misha A.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 2 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">Wish I would have found them sooner. They replied ridiculously fast, quoted a reasonable price, communication was excellent.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=C+D&background=5a9a6e&color=fff&size=48" alt="C D. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">C D.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">Doug Cathey and his team removed a very large but damaged tree. They did an excellent job, exactly on time.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=Wayne+F&background=5a9a6e&color=fff&size=48" alt="Wayne F. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Wayne F.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 4 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">Shane is awesome. He's very communicative and fast. He's dependable and polite. Does a great job with the mow.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=Allison+D&background=5a9a6e&color=fff&size=48" alt="Allison D. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Allison D.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 5 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">Doug and his crew did some property clearing for me last spring. They showed up as scheduled and did an outstanding job.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=Susan+G&background=5a9a6e&color=fff&size=48" alt="Susan G. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Susan G.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 6 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">I've hired several companies in the past for tree work in our backyard and my experience with Doug Cathy has been the best by far.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=S+W&background=5a9a6e&color=fff&size=48" alt="S W. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">S W.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Testimonial 7 -->
-                    <div class="testimonial-card fade-up">
-                        <div class="testimonial-quote-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z"></path></svg>
-                        </div>
-                        <div class="stars">
-                            <i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i><i>&#9733;</i>
-                        </div>
-                        <p class="testimonial-text">I finally had one day off to get some chores done and called several places for quotes. Doug got back to me in less than 20 mins.</p>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <img src="https://ui-avatars.com/api/?name=Rayanna+S&background=5a9a6e&color=fff&size=48" alt="Rayanna S. profile photo" width="48" height="48">
-                            </div>
-                            <div class="author-info">
-                                <div class="author-name">Rayanna S.</div>
-                                <div class="author-location">Austin, TX</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             PROCESS SECTION
-             ============================================================ -->
-        <section class="process section-padding" id="process">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
-                        How It Works
-                    </div>
-                    <h2>Getting Started Is <span class="accent-word">Easy</span></h2>
-                    <p>From first call to a beautiful yard, our process is simple, fast, and stress-free.</p>
-                </div>
-
-                <div class="process-timeline">
-                    <!-- Step 1 -->
-                    <div class="process-step fade-up">
-                        <span class="process-step-number">01</span>
-                        <div class="process-step-card">
-                            <div class="step-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
-                            </div>
-                            <h4>Request a Quote</h4>
-                            <p>Call or fill out our form for a free estimate. We respond fast!</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 2 -->
-                    <div class="process-step fade-up">
-                        <span class="process-step-number">02</span>
-                        <div class="process-step-card">
-                            <div class="step-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
-                            </div>
-                            <h4>Get Your Plan</h4>
-                            <p>We assess your property and create a tailored plan just for you.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 3 -->
-                    <div class="process-step fade-up">
-                        <span class="process-step-number">03</span>
-                        <div class="process-step-card">
-                            <div class="step-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"></path></svg>
-                            </div>
-                            <h4>We Get to Work</h4>
-                            <p>Our experienced crew handles everything professionally and on time.</p>
-                        </div>
-                    </div>
-
-                    <!-- Step 4 -->
-                    <div class="process-step fade-up">
-                        <span class="process-step-number">04</span>
-                        <div class="process-step-card">
-                            <div class="step-icon">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                            </div>
-                            <h4>Enjoy Your Yard</h4>
-                            <p>Sit back and enjoy your beautiful outdoor space. It's that easy!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             GALLERY SECTION
-             ============================================================ -->
-        <section class="gallery section-padding" id="gallery">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><polyline points="21 15 16 10 5 21"></polyline></svg>
-                        Our Work
-                    </div>
-                    <h2>See the <span class="accent-word">Transformation</span></h2>
-                    <p>Browse our portfolio of completed projects across Austin and surrounding areas.</p>
-                </div>
-
-                <div class="gallery-grid">
-                    <div class="gallery-item fade-up">
-                        <img src="images/lawn-mowing-1.png" alt="Freshly mowed residential lawn in Austin, TX" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Lawn Mowing</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/tree-trimming-1.png" alt="Professional tree trimming project in Austin" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Tree Trimming</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/clean-ups-1.png" alt="Seasonal yard clean up completed in Austin" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Spring Clean Up</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/land-clearing-1.png" alt="Land clearing project in the Austin area" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Land Clearing</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/mulching-1.png" alt="Mulch installation in landscape beds" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Mulching</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/weed-control-1.png" alt="Weed control treatment results in Austin" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Weed Control</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-1.jpg" alt="Beautifully maintained Austin residential property" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Residential Property</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-2.jpg" alt="Completed lawn care project in Round Rock" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Lawn Maintenance</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-3.jpg" alt="Landscape transformation in Cedar Park" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Landscape Work</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-4.jpg" alt="Property clearing work in Leander" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Property Clearing</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-5.jpg" alt="Yard cleanup project in Pflugerville" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Yard Cleanup</span>
-                        </div>
-                    </div>
-
-                    <div class="gallery-item fade-up">
-                        <img src="images/gallery-6.jpg" alt="Full service lawn care in Georgetown" loading="lazy" width="600" height="400">
-                        <div class="gallery-overlay">
-                            <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
-                            <span class="gallery-caption">Full Service</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             VIDEO SECTION
-             ============================================================ -->
-        <section class="video-section section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
-                        Featured Video
-                    </div>
-                    <h2>Austin Water <span class="accent-word">Restrictions</span> Guide</h2>
-                    <p>Stay informed about local watering rules to keep your lawn healthy and compliant.</p>
-                </div>
-
-                <div class="video-wrapper">
-                    <div class="video-container">
-                        <video controls preload="metadata" poster="images/hero-bg.jpg">
-                            <source src="images/water-restrictions.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             FAQ SECTION
-             ============================================================ -->
-        <section class="faq section-padding" id="faq">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-                        FAQ
-                    </div>
-                    <h2>Frequently Asked <span class="accent-word">Questions</span></h2>
-                    <p>Everything you need to know about our services. Can't find what you're looking for? Give us a call!</p>
-                </div>
-
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>What areas do you serve?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>We proudly serve Austin, Round Rock, Leander, Lakeway, Cedar Park, Pflugerville, Georgetown, and surrounding areas throughout the greater Austin metro.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>How do I get a quote?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Simply call us at (512) 413-8455 or fill out our contact form below. All estimates are completely free with no obligation!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Are you licensed and insured?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Yes, we are fully licensed and insured for your complete peace of mind. We carry liability insurance and workers' compensation coverage.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>How often should I mow my lawn?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>We recommend weekly mowing during the growing season (spring through fall) and bi-weekly during cooler months. We can tailor a schedule to your lawn's specific needs.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Do you offer one-time services?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Absolutely! We offer both recurring maintenance plans and one-time projects. Whether it's a single clean up or a full land clearing job, we're happy to help.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>What's included in a clean up?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Our clean up services include debris removal, leaf cleanup, overgrown vegetation clearing, and landscape restoration to get your yard looking its best.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>When is the best time for tree trimming?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Late winter to early spring is generally the best time for tree trimming, but we assess and perform tree work year-round based on your specific needs and safety concerns.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            <span>Do you provide free estimates?</span>
-                            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
-                        </button>
-                        <div class="faq-answer">
-                            <div class="faq-answer-inner">
-                                <p>Absolutely! All of our estimates are 100% free with no obligation. Give us a call or fill out our contact form and we'll get back to you promptly.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ============================================================
-             CONTACT SECTION
-             ============================================================ -->
-        <section class="contact section-padding" id="contact">
-            <div class="container">
-                <div class="section-header">
-                    <div class="section-badge">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                        Contact Us
-                    </div>
-                    <h2>Get Your Free <span class="accent-word">Estimate</span> Today</h2>
-                    <p>Ready to transform your yard? Reach out and we'll get back to you fast. No obligation, no hassle.</p>
-                </div>
-
-                <div class="contact-grid">
-                    <!-- Left Column: Contact Info -->
-                    <div class="contact-info">
-                        <h3>Let's Talk About Your Yard</h3>
-                        <p>Whether you need weekly mowing or a one-time project, we're here to help. Call us directly or fill out the form and we'll respond quickly.</p>
-
-                        <div class="contact-info-cards">
-                            <div class="contact-info-card">
-                                <div class="info-icon">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
-                                </div>
-                                <div class="info-text">
-                                    <div class="info-label">Phone</div>
-                                    <div class="info-value"><a href="tel:+15124138455">(512) 413-8455</a></div>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-card">
-                                <div class="info-icon">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                                </div>
-                                <div class="info-text">
-                                    <div class="info-label">Email</div>
-                                    <div class="info-value"><a href="mailto:catheyslandscapes@gmail.com">catheyslandscapes@gmail.com</a></div>
-                                </div>
-                            </div>
-
-                            <div class="contact-info-card">
-                                <div class="info-icon">
-                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                                </div>
-                                <div class="info-text">
-                                    <div class="info-label">Service Area</div>
-                                    <div class="info-value">Austin, TX &amp; Surrounding Areas</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="contact-hours">
-                            <h4>
-                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                                Business Hours
-                            </h4>
-                            <div class="contact-hours-list">
-                                <div class="hours-row">
-                                    <span class="day">Monday - Friday</span>
-                                    <span class="time">8:00 AM - 6:00 PM</span>
-                                </div>
-                                <div class="hours-row">
-                                    <span class="day">Saturday</span>
-                                    <span class="time">8:00 AM - 6:00 PM</span>
-                                </div>
-                                <div class="hours-row">
-                                    <span class="day">Sunday</span>
-                                    <span class="time">8:00 AM - 6:00 PM</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Contact Form -->
-                    <div class="contact-form-wrapper">
-                        <div class="contact-form-inner">
-                            <h3>Request a Free Quote</h3>
-                            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
-
-                            <form id="contactForm">
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <input type="text" class="form-input" name="firstName" id="firstName" placeholder=" " required>
-                                        <label class="form-label" for="firstName">First Name</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-input" name="lastName" id="lastName" placeholder=" " required>
-                                        <label class="form-label" for="lastName">Last Name</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-row">
-                                    <div class="form-group">
-                                        <input type="email" class="form-input" name="email" id="email" placeholder=" " required>
-                                        <label class="form-label" for="email">Email Address</label>
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="tel" class="form-input" name="phone" id="phone" placeholder=" " required>
-                                        <label class="form-label" for="phone">Phone Number</label>
-                                    </div>
-                                </div>
-
-                                <div class="form-group full-width">
-                                    <select class="form-select" name="service" id="service" required>
-                                        <option value="" disabled selected>Select a Service</option>
-                                        <option value="lawn-mowing">Lawn Mowing</option>
-                                        <option value="clean-ups">Spring &amp; Fall Clean Ups</option>
-                                        <option value="tree-trimming">Tree Trimming</option>
-                                        <option value="mulching">Mulching</option>
-                                        <option value="land-clearing">Land Clearing</option>
-                                        <option value="weed-control">Weed Control</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                    <label class="form-label" for="service">Service Needed</label>
-                                </div>
-
-                                <div class="form-group full-width textarea-group">
-                                    <textarea class="form-textarea" name="message" id="message" rows="4" placeholder=" "></textarea>
-                                    <label class="form-label" for="message">Tell Us About Your Project</label>
-                                </div>
-
-                                <!-- Honeypot -->
-                                <input type="text" name="website" tabindex="-1" aria-hidden="true" style="position:absolute;left:-9999px;opacity:0;">
-
-                                <button type="submit" class="form-submit-btn">
-                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
-                                    Send Request
-                                </button>
-                            </form>
-
-                            <div class="form-success" id="formSuccess">
-                                <div class="success-icon">
-                                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
-                                </div>
-                                <h3>Thank You!</h3>
-                                <p>Your request has been sent successfully. We'll get back to you shortly!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <!-- ============================================================
-         FOOTER
-         ============================================================ -->
-    <footer class="footer">
-        <div class="footer-main">
-            <div class="container">
-                <div class="footer-grid">
-                    <!-- Brand Column -->
-                    <div class="footer-brand">
-                        <a href="#home" class="footer-logo">
-                            <img src="images/logo-cropped.png" alt="Cathey's Lawn Care logo" width="40" height="40">
-                            <div class="logo-text">Cathey's <span>Lawn Care</span></div>
-                        </a>
-                        <p>Family-owned lawn care serving Austin, TX and surrounding areas for over 10 years. No job too big or small.</p>
-                        <div class="footer-social">
-                            <a href="https://www.facebook.com/CatheysLawnCareAustin/" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path></svg>
-                            </a>
-                            <a href="https://www.yelp.com/biz/catheys-lawn-care-austin-4" target="_blank" rel="noopener noreferrer" aria-label="Visit our Yelp page">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Quick Links Column -->
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <div class="footer-links">
-                            <a href="#home">Home</a>
-                            <a href="#services">Services</a>
-                            <a href="#about">About Us</a>
-                            <a href="#gallery">Gallery</a>
-                            <a href="#testimonials">Reviews</a>
-                            <a href="#contact">Contact</a>
-                        </div>
-                    </div>
-
-                    <!-- Services Column -->
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <div class="footer-links">
-                            <a href="#services">Lawn Mowing</a>
-                            <a href="#services">Spring &amp; Fall Clean Ups</a>
-                            <a href="#services">Tree Trimming</a>
-                            <a href="#services">Mulching</a>
-                            <a href="#services">Land Clearing</a>
-                            <a href="#services">Weed Control</a>
-                        </div>
-                    </div>
-
-                    <!-- Service Areas Column -->
-                    <div class="footer-column">
-                        <h4>Service Areas</h4>
-                        <div class="footer-links">
-                            <a href="#contact">Austin, TX</a>
-                            <a href="#contact">Round Rock, TX</a>
-                            <a href="#contact">Leander, TX</a>
-                            <a href="#contact">Cedar Park, TX</a>
-                            <a href="#contact">Pflugerville, TX</a>
-                            <a href="#contact">Georgetown, TX</a>
-                            <a href="#contact">Lakeway, TX</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p>&copy; <span id="currentYear"></span> Cathey's Lawn Care. All rights reserved.</p>
-                <div class="footer-bottom-links">
-                    <a href="#faq">FAQ</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- ============================================================
-         FLOATING CTA (Phone Button)
-         ============================================================ -->
-    <a href="tel:+15124138455" class="floating-cta" id="floatingCta" aria-label="Call Cathey's Lawn Care">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"></path></svg>
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="nav" id="navbar">
+  <div class="container">
+    <a href="#" class="nav-logo">
+      <img src="images/small-logo.png" alt="Cathey's Lawn Care" width="50" height="50">
+      <div class="logo-text">Cathey's <span>Lawn Care</span></div>
     </a>
-
-    <!-- ============================================================
-         BACK TO TOP
-         ============================================================ -->
-    <a href="#home" class="back-to-top" aria-label="Back to top">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
-    </a>
-
-    <!-- ============================================================
-         GALLERY LIGHTBOX
-         ============================================================ -->
-    <div class="gallery-lightbox" id="lightbox">
-        <button class="lightbox-close" aria-label="Close lightbox">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
-        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-        </button>
-        <img id="lightboxImage" src="" alt="Gallery image enlarged view">
-        <button class="lightbox-nav lightbox-next" aria-label="Next image">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-        </button>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
     </div>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-primary">Get Free Quote</a>
+    </div>
+    <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
 
-    <!-- ============================================================
-         TOAST CONTAINER
-         ============================================================ -->
-    <div class="toast-container" id="toastContainer"></div>
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#testimonials">Reviews</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#faq">FAQ</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:5124138455" class="btn btn-primary">Call Now</a>
+</div>
 
-    <!-- Main JavaScript -->
-    <script src="js/main.js"></script>
+<!-- ============================================
+     HERO
+     ============================================ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">&#9733; Family-Owned &amp; Trusted Since 2014</div>
+    <h1>Austin's Most Trusted <em>Lawn Care</em> Professionals</h1>
+    <p class="hero-sub">From routine mowing to complete land clearing, we deliver results that transform your property. No job too big or small.</p>
+    <div class="hero-buttons">
+      <a href="#contact" class="btn btn-primary">Get Your Free Quote</a>
+      <a href="tel:5124138455" class="btn btn-outline">Call (512) 413-8455</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-num" data-target="500" data-suffix="+">0</div>
+        <div class="hero-stat-label">Happy Customers</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num" data-target="10" data-suffix="+">0</div>
+        <div class="hero-stat-label">Years Experience</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-num" data-target="4.9" data-suffix="">0</div>
+        <div class="hero-stat-label">Star Rating</div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </div>
+</section>
+
+<!-- ============================================
+     PAIN POINTS
+     ============================================ -->
+<section class="problems" id="problems">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Sound Familiar?</div>
+      <h2 class="section-title">Common Frustrations</h2>
+      <p class="section-desc">Every Austin homeowner deserves a yard they're proud of</p>
+    </div>
+    <div class="problems-grid">
+      <div class="problem-card fade-up">
+        <div class="icon">&#128548;</div>
+        <h3>Unreliable Services</h3>
+        <p>You've dealt with lawn companies that no-show, cancel last minute, or rush through the job leaving your yard looking half-done. You deserve a team that shows up on time, every time.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="icon">&#127807;</div>
+        <h3>Overgrown &amp; Neglected</h3>
+        <p>Life gets busy, and before you know it your yard has become an overgrown jungle. Tall grass, wild weeds, and untrimmed trees can make even the nicest home look neglected.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="icon">&#128184;</div>
+        <h3>Sky-High Pricing</h3>
+        <p>Too many companies charge premium prices for basic services. You shouldn't need to break the bank just to keep your lawn looking presentable. Fair pricing matters.</p>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="icon">&#128245;</div>
+        <h3>Poor Communication</h3>
+        <p>You never know when they'll show up, if they'll show up, or what they actually did. Getting a straight answer feels impossible. You deserve clear, honest communication every step of the way.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     ABOUT
+     ============================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">Meet Your Lawn Care Team</h2>
+    <div class="about-grid">
+      <div class="about-image fade-up">
+        <img src="images/about-bg.jpg" alt="Cathey's Lawn Care team at work in Austin, Texas" loading="lazy">
+        <div class="about-image-badge">&#11088; Trusted Since 2014</div>
+      </div>
+      <div class="about-text fade-up">
+        <h3>Doug Cathey &amp; Family</h3>
+        <p>For over a decade, Cathey's Lawn Care has been the name Austin homeowners trust when they need dependable, high-quality lawn care. What started as a one-man operation by Doug Cathey has grown into a full-service lawn care company serving the entire Greater Austin area.</p>
+        <p>As a family-owned and operated business, we treat every property like it's our own. We understand that your home is your biggest investment, and your yard is the first thing people see. That's why we take pride in delivering meticulous results on every job, whether it's a simple weekly mow or a complete land clearing project.</p>
+        <p>Our commitment to honest communication, fair pricing, and showing up when we say we will has earned us hundreds of loyal customers across Austin, Round Rock, Cedar Park, and beyond. When you hire Cathey's, you're not just getting a lawn service &mdash; you're getting a team that genuinely cares about making your property look its best.</p>
+        <div class="about-features">
+          <div class="about-feature">&#10003; Family-Owned &amp; Operated</div>
+          <div class="about-feature">&#10003; 10+ Years Experience</div>
+          <div class="about-feature">&#10003; Licensed &amp; Insured</div>
+          <div class="about-feature">&#10003; Free Estimates</div>
+          <div class="about-feature">&#10003; 7 Days a Week</div>
+          <div class="about-feature">&#10003; All of Greater Austin</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SERVICES
+     ============================================ -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">What We Do</div>
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-desc">Comprehensive lawn care solutions for every need</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/lawn-mowing-1.png" alt="Professional lawn mowing service in Austin, TX" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Lawn Mowing</h3>
+          <p>Keep your lawn looking sharp with our professional mowing service. We mow at the correct height for your grass type, edge along walkways and driveways, and leave clean, crisp lines every visit. Weekly and bi-weekly plans available.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/clean-ups-1.png" alt="Spring and fall yard clean up service in Austin" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Spring &amp; Fall Clean Ups</h3>
+          <p>Seasonal clean ups to get your yard in top shape. We handle leaf removal, debris clearing, bed edging, and thorough grooming so your property looks fresh and ready for the season ahead. A complete reset for your outdoor space.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/tree-trimming-1.png" alt="Tree trimming and removal service in Austin, TX" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Tree Trimming</h3>
+          <p>From light pruning to full tree removal, we handle it all safely and efficiently. Our experienced crew trims overgrown branches, clears deadwood, and shapes your trees to improve both the health of the tree and the look of your property.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/mulching-1.png" alt="Mulching and bed maintenance service in Austin" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Mulching</h3>
+          <p>Fresh mulch transforms the look of your landscape beds instantly. We install premium mulch that retains moisture, suppresses weeds, and gives your flower beds and trees a polished, well-maintained appearance all season long.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/land-clearing-1.png" alt="Land clearing and brush removal service in Austin, TX" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Land Clearing</h3>
+          <p>Need to reclaim overgrown land? We clear brush, remove unwanted vegetation, and prepare your property for whatever comes next. Whether it's a residential lot or acres of brush, our crew has the equipment and experience to get it done right.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+      <div class="service-card fade-up">
+        <div class="service-card-image">
+          <img src="images/weed-control-1.png" alt="Weed control and lawn treatment service in Austin" loading="lazy">
+        </div>
+        <div class="service-card-content">
+          <h3>Weed Control</h3>
+          <p>Take back your lawn from invasive weeds. Our targeted weed control treatments eliminate existing weeds and prevent new growth, giving your grass the space it needs to thrive. We use effective, lawn-safe methods tailored to Central Texas conditions.</p>
+          <a href="#contact" class="service-link">Get a Quote &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     TESTIMONIALS
+     ============================================ -->
+<section class="testimonials dark-section" id="testimonials">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Reviews</div>
+      <h2 class="section-title">What Our Clients Say</h2>
+      <p class="section-desc">Real reviews from real Austin homeowners</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"My lawn was an absolute mess &mdash; weeds everywhere, leaves everywhere, grass out of control. Doug and his team were exactly on time and did exactly what I asked."</p>
+        <div class="testimonial-author">
+          <strong>Misha A.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Wish I would have found them sooner. They replied ridiculously fast, quoted a reasonable price, communication was excellent."</p>
+        <div class="testimonial-author">
+          <strong>C D.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Doug Cathey and his team removed a very large but damaged tree. They did an excellent job, exactly on time."</p>
+        <div class="testimonial-author">
+          <strong>Wayne F.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Shane is awesome. He's very communicative and fast. He's dependable and polite. Does a great job with the mow."</p>
+        <div class="testimonial-author">
+          <strong>Allison D.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Doug and his crew did some property clearing for me last spring. They showed up as scheduled and did an outstanding job."</p>
+        <div class="testimonial-author">
+          <strong>Susan G.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"I've hired several companies in the past for tree work in our backyard and my experience with Doug Cathey has been the best by far."</p>
+        <div class="testimonial-author">
+          <strong>S W.</strong>
+          <span class="testimonial-source">Austin, TX</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROCESS
+     ============================================ -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">Getting Started Is Easy</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step fade-up">
+        <h3>Request a Quote</h3>
+        <p>Give us a call at (512) 413-8455 or fill out our quick online form. Tell us what you need and we'll take it from there.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Get Your Plan</h3>
+        <p>We'll assess your property, discuss your goals, and provide a clear, no-obligation estimate with a plan tailored to your needs.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>We Get to Work</h3>
+        <p>Our experienced crew arrives on schedule with the right equipment and gets the job done right the first time. No cutting corners.</p>
+      </div>
+      <div class="process-step fade-up">
+        <h3>Enjoy Your Yard</h3>
+        <p>Sit back, relax, and enjoy a property you're proud of. We handle the hard work so you can spend your time on what matters most.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     GALLERY
+     ============================================ -->
+<section class="gallery" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Our Work</div>
+      <h2 class="section-title">Photo Gallery</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="images/lawn-mowing-1.png" alt="Freshly mowed residential lawn in Austin" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/lawn-mowing-2.png" alt="Professional lawn mowing with clean edges" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tree-trimming-1.png" alt="Tree trimming service on a large oak tree" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/tree-trimming-2.png" alt="Completed tree trimming with clean cuts" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/clean-ups-1.png" alt="Spring yard clean up in progress" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/clean-ups-2.png" alt="Fall leaf removal and yard clean up" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/land-clearing-1.png" alt="Land clearing project removing brush and debris" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/land-clearing-2.png" alt="Completed land clearing with clean property" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/mulching-1.png" alt="Fresh mulch installed around landscape beds" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/mulching-2.png" alt="Mulching service with clean bed edges" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/weed-control-1.png" alt="Weed control treatment on residential lawn" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/weed-control-2.png" alt="Healthy lawn after weed control treatment" loading="lazy">
+        <div class="gallery-overlay">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     VIDEO
+     ============================================ -->
+<section class="video-section dark-section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Featured</div>
+      <h2 class="section-title">As Seen On Spectrum News</h2>
+    </div>
+    <div class="video-wrapper">
+      <video controls preload="none" poster="images/header-background-1920x730.jpg">
+        <source src="images/water-restrictions.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FAQ
+     ============================================ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Questions</div>
+      <h2 class="section-title">Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q">What areas do you serve? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>We proudly serve the Greater Austin area including Austin, Round Rock, Leander, Lakeway, Cedar Park, Pflugerville, and Georgetown. If you're not sure whether you're in our service area, just give us a call and we'll let you know.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How do I get a quote? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Getting a quote is easy. You can call us directly at (512) 413-8455, send us an email at catheyslandscapes@gmail.com, or fill out the contact form on this page. We typically respond within 24 hours and all estimates are completely free with no obligation.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Are you licensed and insured? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes, Cathey's Lawn Care is fully licensed and insured. We carry liability insurance to protect both our team and your property. Your peace of mind is important to us.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">How often should I mow my lawn? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>In Central Texas, most lawns benefit from weekly mowing during the growing season (March through October) and bi-weekly mowing during the cooler months. We'll help you determine the best schedule based on your grass type and property needs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you offer one-time services? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Absolutely. While many of our customers are on recurring schedules, we're happy to handle one-time jobs like clean ups, tree trimming, land clearing, or a single mow to get your yard back in shape. No contracts required.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">What's included in a clean up? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Our seasonal clean ups typically include leaf removal, debris clearing, bed edging, trimming of overgrown shrubs, and a thorough mow. We can customize the service based on what your yard needs. Just let us know your priorities and we'll tailor the job accordingly.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">When is the best time for tree trimming? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Most trees in Central Texas are best trimmed during late winter or early spring before new growth begins. However, dead or hazardous branches should be removed any time of year for safety. We'll advise you on the best timing for your specific trees.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">Do you provide free estimates? <span class="chevron">&#9660;</span></button>
+        <div class="faq-a">
+          <div class="faq-a-inner">
+            <p>Yes, every estimate is 100% free with no obligation. We'll assess your property, discuss your needs, and provide a clear, upfront price before any work begins. No surprises, no hidden fees.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT
+     ============================================ -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Get Your Free Quote</h2>
+      <p class="section-desc">Ready to transform your outdoor space? We'll get back to you within 24 hours.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Give us a call or fill out the form and we'll get back to you as soon as possible.</p>
+        <div class="contact-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="card-text">
+            <div class="label">Phone</div>
+            <a href="tel:5124138455" class="value">(512) 413-8455</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <div class="card-text">
+            <div class="label">Email</div>
+            <a href="mailto:catheyslandscapes@gmail.com" class="value">catheyslandscapes@gmail.com</a>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="card-text">
+            <div class="label">Hours</div>
+            <div class="value">Mon - Sun, 8:00 AM - 6:00 PM CST</div>
+          </div>
+        </div>
+        <div class="contact-card">
+          <div class="card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="card-text">
+            <div class="label">Service Area</div>
+            <div class="value">Austin, Round Rock, Leander, Lakeway, Cedar Park, Pflugerville, Georgetown</div>
+          </div>
+        </div>
+        <div class="contact-social">
+          <a href="https://www.facebook.com/CatheysLawnCareAustin/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="https://www.yelp.com/biz/catheys-lawn-care-austin-4" target="_blank" rel="noopener" aria-label="Yelp">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-4h2v4zm0-6h-2V9h2v2z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="contact-form" id="contactFormWrapper">
+        <form id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="service">Service Needed</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Lawn Mowing</option>
+                <option>Spring &amp; Fall Clean Up</option>
+                <option>Tree Trimming</option>
+                <option>Mulching</option>
+                <option>Land Clearing</option>
+                <option>Weed Control</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group full-width">
+            <label for="date">Preferred Date</label>
+            <input type="date" id="date" name="preferredDate">
+          </div>
+          <div class="form-group full-width">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your project..."></textarea>
+          </div>
+          <!-- Honeypot -->
+          <div class="hp-field">
+            <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          </div>
+          <div class="form-submit">
+            <button type="submit" class="btn btn-primary w-100">Send My Request &rarr;</button>
+          </div>
+          <p class="form-privacy">By submitting, you agree to be contacted about your inquiry. We never share your info.</p>
+        </form>
+        <div class="form-success" id="formSuccess">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>Thank You!</h3>
+          <p>We've received your request and will get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="nav-logo">
+        <img src="images/small-logo.png" alt="Cathey's Lawn Care" width="40" height="40">
+        <div class="logo-text">Cathey's <span>Lawn Care</span></div>
+      </a>
+      <p>Austin's trusted family-owned lawn care company. Making your home a place you'll always be proud of.</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/CatheysLawnCareAustin/" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://www.yelp.com/biz/catheys-lawn-care-austin-4" target="_blank" rel="noopener" aria-label="Yelp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-4h2v4zm0-6h-2V9h2v2z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul class="footer-links">
+        <li><a href="#services">Lawn Mowing</a></li>
+        <li><a href="#services">Clean Ups</a></li>
+        <li><a href="#services">Tree Trimming</a></li>
+        <li><a href="#services">Mulching</a></li>
+        <li><a href="#services">Land Clearing</a></li>
+        <li><a href="#services">Weed Control</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-links">
+        <li><a href="tel:5124138455">&#128222; (512) 413-8455</a></li>
+        <li><a href="mailto:catheyslandscapes@gmail.com">&#128231; catheyslandscapes@gmail.com</a></li>
+        <li>&#128336; Mon-Sun, 8AM-6PM</li>
+        <li>&#128205; Austin, TX &amp; Surrounding Areas</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="currentYear">2026</span> Cathey's Lawn Care. All rights reserved. | Built by <a href="https://advancedmarketing.co" target="_blank" style="color:var(--gold)">Advanced Marketing</a></p>
+  </div>
+</footer>
+
+<!-- ============================================
+     FLOATING CTA / BACK TO TOP / LIGHTBOX / TOAST
+     ============================================ -->
+<a href="tel:5124138455" class="floating-cta" id="floatingCta" aria-label="Call us">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+</a>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" aria-label="Previous">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <img id="lightboxImage" src="" alt="Gallery image">
+  <button class="lightbox-nav lightbox-next" aria-label="Next">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<div class="toast-container" id="toastContainer"></div>
+
+<script src="js/main.js"></script>
 </body>
 </html>
