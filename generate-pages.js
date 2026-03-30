@@ -374,7 +374,17 @@ function getNav() {
     </a>
     <div class="nav-links">
       <a href="../#about">About</a>
-      <a href="../#services">Services</a>
+      <div class="nav-dropdown">
+        <a href="../#services" class="nav-dropdown-toggle">Services <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="nav-dropdown-menu">
+          <a href="../services/lawn-mowing.html">Lawn Mowing</a>
+          <a href="../services/clean-ups.html">Spring & Fall Clean Ups</a>
+          <a href="../services/tree-trimming.html">Tree Trimming</a>
+          <a href="../services/mulching.html">Mulching</a>
+          <a href="../services/land-clearing.html">Land Clearing</a>
+          <a href="../services/weed-control.html">Weed Control</a>
+        </div>
+      </div>
       <a href="../#testimonials">Reviews</a>
       <a href="../#gallery">Gallery</a>
       <a href="../#faq">FAQ</a>
@@ -387,6 +397,14 @@ function getNav() {
 <div class="mobile-menu" id="mobileMenu">
   <a href="../">Home</a>
   <a href="../#services">Services</a>
+  <div class="mobile-submenu">
+    <a href="../services/lawn-mowing.html">→ Lawn Mowing</a>
+    <a href="../services/clean-ups.html">→ Clean Ups</a>
+    <a href="../services/tree-trimming.html">→ Tree Trimming</a>
+    <a href="../services/mulching.html">→ Mulching</a>
+    <a href="../services/land-clearing.html">→ Land Clearing</a>
+    <a href="../services/weed-control.html">→ Weed Control</a>
+  </div>
   <a href="../#testimonials">Reviews</a>
   <a href="#quote">Get Quote</a>
   <a href="tel:${BUSINESS.phoneRaw}" class="btn btn-primary">Call Now</a>

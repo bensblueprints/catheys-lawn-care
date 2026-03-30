@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://catheys-lawn-care.netlify.app/sitemap.xml
