@@ -1,0 +1,8 @@
+{
+  "name": "catheys-lawn-care",
+  "version": "1.0.0",
+  "description": "Cathey's Lawn Care - Premium website with lead booking platform",
+  "dependencies": {
+    "@netlify/blobs": "^8.0.0"
+  }
+}
