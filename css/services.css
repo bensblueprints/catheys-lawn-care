@@ -1,0 +1,264 @@
+/* ============================================
+   SERVICE PAGES - Generated Styles
+   ============================================ */
+
+/* Service Hero */
+.service-hero {
+  position: relative;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  background: center/cover no-repeat;
+  padding: 8rem 2rem 4rem;
+}
+.service-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(26,58,42,0.7), rgba(26,58,42,0.9));
+}
+.service-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.service-hero h1 {
+  font-family: 'Bebas Neue';
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  color: white;
+  letter-spacing: 3px;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+.service-hero .hero-sub {
+  color: var(--gray-300);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+.service-hero .hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.15);
+  padding: 0.5rem 1.25rem;
+  border-radius: 50px;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+.service-hero .hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  padding: 1rem 2rem;
+  background: var(--gray-50);
+  font-size: 0.9rem;
+}
+.breadcrumb a {
+  color: var(--green);
+  font-weight: 500;
+  text-decoration: none;
+}
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+.breadcrumb span {
+  color: var(--gray-400);
+  margin: 0 0.35rem;
+}
+
+/* Service Content Layout */
+.service-content {
+  padding: 4rem 2rem;
+  background: var(--white);
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 3rem;
+  align-items: start;
+}
+.content-main h2 {
+  font-family: 'Bebas Neue';
+  font-size: 1.8rem;
+  color: var(--forest);
+  letter-spacing: 1px;
+  margin: 2.5rem 0 1rem;
+}
+.content-main h2:first-child {
+  margin-top: 0;
+}
+.content-main p {
+  color: var(--gray-600);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+.content-image {
+  margin: 2rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.content-image img {
+  width: 100%;
+  display: block;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+.benefit-item {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem;
+  background: var(--gray-50);
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: var(--forest);
+}
+.benefit-item .check {
+  color: var(--green);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* Area Tags */
+.area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 1rem 0 2rem;
+}
+.area-tags a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: 8px;
+  color: var(--green);
+  font-weight: 500;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.area-tags a:hover {
+  background: var(--green);
+  color: white;
+  border-color: var(--green);
+}
+
+/* Related Services */
+.related-services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.related-card {
+  background: var(--gray-50);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: block;
+}
+.related-card:hover {
+  transform: translateY(-4px);
+}
+.related-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+.related-card-content {
+  padding: 1rem;
+}
+.related-card-content h4 {
+  font-family: 'Bebas Neue';
+  color: var(--forest);
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.5px;
+}
+.related-card-content span {
+  color: var(--green);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+/* Sidebar */
+.content-sidebar {
+  position: sticky;
+  top: 100px;
+}
+.sidebar-card {
+  background: var(--gray-50);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.sidebar-card h3 {
+  font-family: 'Bebas Neue';
+  font-size: 1.2rem;
+  color: var(--forest);
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+.sidebar-card p {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sidebar-links a {
+  display: block;
+  padding: 0.5rem 0;
+  color: var(--green);
+  font-weight: 500;
+  border-bottom: 1px solid var(--gray-200);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+.sidebar-links a:hover {
+  color: var(--forest);
+}
+.sidebar-links li:last-child a {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .content-sidebar {
+    position: static;
+  }
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  .related-services {
+    grid-template-columns: 1fr;
+  }
+  .service-hero {
+    padding: 6rem 1rem 3rem;
+    min-height: 40vh;
+  }
+}
