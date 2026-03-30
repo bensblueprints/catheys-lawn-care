@@ -77,9 +77,9 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", debounce(highlightNav, 50), { passive: true });
 
   // ---- Mobile Menu ----
-  const hamburger = document.querySelector(".hamburger");
-  const mobileMenu = document.querySelector(".mobile-menu");
-  const mobileLinks = document.querySelectorAll(".mobile-menu a");
+  const hamburger = document.querySelector(".nav-hamburger");
+  const mobileMenu = document.querySelector(".nav-mobile-overlay");
+  const mobileLinks = document.querySelectorAll(".nav-mobile-overlay a");
 
   if (hamburger && mobileMenu) {
     hamburger.addEventListener("click", () => {
@@ -152,8 +152,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImage");
   const lightboxClose = document.querySelector(".lightbox-close");
-  const lightboxPrev = document.querySelector(".lightbox-prev");
-  const lightboxNext = document.querySelector(".lightbox-next");
+  const lightboxPrev = document.querySelector(".lightbox-prev, .lightbox-nav.lightbox-prev");
+  const lightboxNext = document.querySelector(".lightbox-next, .lightbox-nav.lightbox-next");
   const galleryItems = document.querySelectorAll(".gallery-item img");
   let currentGalleryIndex = 0;
 
@@ -277,8 +277,8 @@ document.addEventListener("DOMContentLoaded", () => {
           // Show success state
           const successMsg = document.getElementById("formSuccess");
           if (successMsg) {
-            successMsg.classList.add("show");
-            setTimeout(() => successMsg.classList.remove("show"), 5000);
+            successMsg.classList.add("active");
+            setTimeout(() => successMsg.classList.remove("active"), 5000);
           }
         } else {
           showToast(result.error || "Something went wrong. Please try again.", "error");
