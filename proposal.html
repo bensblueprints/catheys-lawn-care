@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Proposal - Cathey's Lawn Care | Advanced Marketing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    @page { size: letter; margin: 0.75in; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: #1e293b;
+      line-height: 1.6;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page { max-width: 8.5in; margin: 0 auto; padding: 0.75in; }
+    .page-break { page-break-after: always; }
+
+    /* Cover Page */
+    .cover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 9in;
+      text-align: center;
+      background: linear-gradient(135deg, #1a3a2a 0%, #234d38 100%);
+      color: white;
+      border-radius: 0;
+      margin: -0.75in;
+      padding: 2in 1.5in;
+    }
+    .cover-badge {
+      display: inline-block;
+      background: rgba(212,168,83,0.2);
+      border: 1px solid rgba(212,168,83,0.5);
+      color: #e0be76;
+      padding: 0.4rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
+    .cover h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 0.5rem;
+    }
+    .cover h1 span { color: #d4a853; }
+    .cover .subtitle {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #94a39b;
+      margin-bottom: 3rem;
+    }
+    .cover-meta {
+      font-size: 0.9rem;
+      color: #94a39b;
+      line-height: 2;
+    }
+    .cover-meta strong { color: #fff; }
+    .cover-logo {
+      margin-top: 3rem;
+      font-size: 0.8rem;
+      color: #647069;
+      letter-spacing: 1px;
+    }
+
+    /* Content */
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1a3a2a;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid #d4a853;
+    }
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #2d6a4f;
+      margin: 1.5rem 0 0.5rem;
+    }
+    p { margin-bottom: 0.75rem; color: #475550; }
+    ul { margin: 0.5rem 0 1rem 1.5rem; color: #475550; }
+    li { margin-bottom: 0.4rem; }
+    strong { color: #1a3a2a; }
+
+    /* Stats Grid */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+    }
+    .stat-box {
+      background: #f8faf9;
+      border: 1px solid #e2e8e4;
+      border-radius: 10px;
+      padding: 1.25rem;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #2d6a4f;
+      display: block;
+    }
+    .stat-box .label {
+      font-size: 0.75rem;
+      color: #647069;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* Feature Table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    th {
+      background: #1a3a2a;
+      color: white;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    td {
+      padding: 0.65rem 1rem;
+      border-bottom: 1px solid #e2e8e4;
+      color: #475550;
+    }
+    tr:nth-child(even) td { background: #f8faf9; }
+    .check { color: #2d6a4f; font-weight: 700; }
+
+    /* Pricing */
+    .pricing-box {
+      background: linear-gradient(135deg, #1a3a2a, #234d38);
+      color: white;
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      text-align: center;
+    }
+    .pricing-box h3 { color: #d4a853; margin-bottom: 1rem; }
+    .price-row {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin: 1.5rem 0;
+    }
+    .price-item { text-align: center; }
+    .price-item .amount {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #d4a853;
+      display: block;
+    }
+    .price-item .period {
+      color: #94a39b;
+      font-size: 0.85rem;
+    }
+    .pricing-note {
+      font-size: 0.85rem;
+      color: #94a39b;
+      margin-top: 1rem;
+    }
+
+    /* URL box */
+    .url-box {
+      background: #f8faf9;
+      border: 2px solid #2d6a4f;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+    .url-box a {
+      color: #2d6a4f;
+      font-weight: 600;
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    .url-box small { display: block; color: #647069; font-size: 0.8rem; margin-top: 0.25rem; }
+
+    /* Page list */
+    .page-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.5rem;
+      margin: 0.75rem 0;
+      list-style: none;
+      padding: 0;
+    }
+    .page-list li {
+      padding: 0.4rem 0.75rem;
+      background: #f8faf9;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: #475550;
+    }
+    .page-list li::before {
+      content: "✓ ";
+      color: #2d6a4f;
+      font-weight: 700;
+    }
+
+    .footer-note {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e2e8e4;
+      font-size: 0.8rem;
+      color: #94a39b;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="page">
+  <div class="cover">
+    <div class="cover-badge">Website Rebuild Proposal</div>
+    <h1>Cathey's <span>Lawn Care</span></h1>
+    <div class="subtitle">Premium Website Redesign & SEO Package</div>
+    <div class="cover-meta">
+      <strong>Prepared for:</strong> Doug Cathey, Cathey's Lawn Care<br>
+      <strong>Prepared by:</strong> Advanced Marketing<br>
+      <strong>Date:</strong> March 31, 2026<br>
+      <strong>Project:</strong> Complete Website Rebuild with SEO Landing Pages
+    </div>
+    <div class="cover-logo">ADVANCED MARKETING</div>
+  </div>
+</div>
+
+<div class="page-break"></div>
+
+<!-- PAGE 2: OVERVIEW -->
+<div class="page">
+  <h2>Project Overview</h2>
+  <p>We've completed a full rebuild of the Cathey's Lawn Care website, transforming it from a basic WordPress site into a modern, high-performance, conversion-optimized web presence designed to generate leads and dominate local search results in the Greater Austin area.</p>
+
+  <div class="url-box">
+    <a href="https://catheys-lawn-care.netlify.app">catheys-lawn-care.netlify.app</a>
+    <small>Live preview — ready to connect to your custom domain</small>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <span class="num">49</span>
+      <span class="label">Total Pages</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">48</span>
+      <span class="label">SEO Landing Pages</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">7</span>
+      <span class="label">Cities Targeted</span>
+    </div>
+    <div class="stat-box">
+      <span class="num">80+</span>
+      <span class="label">Images</span>
+    </div>
+  </div>
+
+  <h2>What Was Built</h2>
+
+  <h3>1. Premium Homepage</h3>
+  <p>A complete, modern homepage featuring 12 conversion-optimized sections:</p>
+  <ul>
+    <li><strong>Full-screen hero</strong> with animated background, trust badges, and dual call-to-action buttons</li>
+    <li><strong>Pain points section</strong> addressing common customer frustrations</li>
+    <li><strong>About section</strong> highlighting 10+ years of experience and family ownership</li>
+    <li><strong>Services showcase</strong> with image cards for all 6 core services</li>
+    <li><strong>Testimonials</strong> featuring 6 real customer reviews with star ratings</li>
+    <li><strong>How It Works</strong> — 4-step process to make booking easy</li>
+    <li><strong>Photo gallery</strong> with lightbox viewer (12 images)</li>
+    <li><strong>Video section</strong> featuring Spectrum News coverage</li>
+    <li><strong>FAQ accordion</strong> with 8 common questions</li>
+    <li><strong>Lead capture form</strong> with server-side processing and email notifications</li>
+    <li><strong>Footer</strong> with full business info, social links, and service navigation</li>
+    <li><strong>Floating phone button</strong> for instant mobile calling</li>
+  </ul>
+
+  <h3>2. Lead Management System</h3>
+  <p>A complete backend system for managing incoming leads:</p>
+  <ul>
+    <li><strong>Admin dashboard</strong> at /admin with password-protected access</li>
+    <li><strong>Lead tracking</strong> — view, filter, and manage all form submissions</li>
+    <li><strong>Status management</strong> — mark leads as New, Contacted, Booked, or Closed</li>
+    <li><strong>Notes system</strong> — add notes to any lead for follow-up tracking</li>
+    <li><strong>CSV export</strong> — download all leads as a spreadsheet</li>
+    <li><strong>Auto-refresh</strong> — dashboard updates every 60 seconds</li>
+    <li><strong>Email notifications</strong> — get notified when new leads come in</li>
+  </ul>
+
+  <h3>3. SEO Landing Page Engine (48 Pages)</h3>
+  <p>We built <strong>48 unique landing pages</strong> targeting every combination of your services and service areas. Each page contains ~1,300-1,400 words of original, SEO-optimized content tailored to that specific service and city.</p>
+
+  <h3>Main Service Pages (6)</h3>
+  <ul class="page-list">
+    <li>Lawn Mowing</li>
+    <li>Spring & Fall Clean Ups</li>
+    <li>Tree Trimming</li>
+    <li>Mulching</li>
+    <li>Land Clearing</li>
+    <li>Weed Control</li>
+  </ul>
+
+  <h3>Area-Specific Pages (42)</h3>
+  <p>Each service has a dedicated page for every city you serve:</p>
+  <ul class="page-list">
+    <li>Austin (6 pages)</li>
+    <li>Round Rock (6 pages)</li>
+    <li>Leander (6 pages)</li>
+    <li>Lakeway (6 pages)</li>
+    <li>Cedar Park (6 pages)</li>
+    <li>Pflugerville (6 pages)</li>
+    <li>Georgetown (6 pages)</li>
+  </ul>
+
+  <p>Each area page includes neighborhood-specific content, local climate and soil information, area population and growth data, and targeted keywords like <em>"lawn mowing in Round Rock, TX"</em> and <em>"tree trimming Cedar Park Texas."</em></p>
+</div>
+
+<div class="page-break"></div>
+
+<!-- PAGE 3: FEATURES -->
+<div class="page">
+  <h2>Technical Features</h2>
+
+  <table>
+    <tr><th>Feature</th><th>Details</th></tr>
+    <tr><td><strong>Design</strong></td><td>Clean, professional design with forest green + gold color scheme. Bebas Neue + Inter typography. Mobile-first responsive layout.</td></tr>
+    <tr><td><strong>Performance</strong></td><td>Zero dependencies, no WordPress bloat. Static HTML/CSS/JS loads in under 2 seconds. Hosted on Netlify's global CDN.</td></tr>
+    <tr><td><strong>SEO</strong></td><td>Schema.org LocalBusiness + Service markup, XML sitemap (49 URLs), robots.txt, Open Graph tags, optimized meta descriptions, proper heading hierarchy.</td></tr>
+    <tr><td><strong>Lead Capture</strong></td><td>Contact form on every page. Serverless backend (Netlify Functions + Blobs). Honeypot spam protection. Email notifications.</td></tr>
+    <tr><td><strong>Admin Panel</strong></td><td>Password-protected dashboard at /admin. View, filter, search leads. Update status, add notes. Export to CSV.</td></tr>
+    <tr><td><strong>Navigation</strong></td><td>Services dropdown menu with links to all 6 service pages. Smooth scroll on homepage. Mobile hamburger menu with service submenu.</td></tr>
+    <tr><td><strong>Gallery</strong></td><td>12-image gallery with lightbox viewer, keyboard navigation (arrow keys + escape), and touch-friendly controls.</td></tr>
+    <tr><td><strong>Accessibility</strong></td><td>Semantic HTML5, ARIA labels, keyboard navigation, proper alt text on all images, focus indicators.</td></tr>
+    <tr><td><strong>SSL</strong></td><td>Free HTTPS certificate via Netlify. All traffic encrypted.</td></tr>
+    <tr><td><strong>Analytics Ready</strong></td><td>Clean HTML structure ready for Google Analytics, Google Search Console, and Facebook Pixel integration.</td></tr>
+  </table>
+
+  <h2>SEO Strategy</h2>
+  <p>The 48-page SEO strategy targets <strong>high-intent local search queries</strong> that potential customers use when looking for lawn care services:</p>
+
+  <h3>Keyword Targeting Examples</h3>
+  <table>
+    <tr><th>Search Query</th><th>Landing Page</th></tr>
+    <tr><td>"lawn mowing austin tx"</td><td>services/lawn-mowing-austin.html</td></tr>
+    <tr><td>"tree trimming round rock"</td><td>services/tree-trimming-round-rock.html</td></tr>
+    <tr><td>"mulching service lakeway texas"</td><td>services/mulching-lakeway.html</td></tr>
+    <tr><td>"land clearing cedar park tx"</td><td>services/land-clearing-cedar-park.html</td></tr>
+    <tr><td>"weed control pflugerville"</td><td>services/weed-control-pflugerville.html</td></tr>
+    <tr><td>"yard cleanup georgetown tx"</td><td>services/clean-ups-georgetown.html</td></tr>
+    <tr><td>"lawn care near me" (Austin)</td><td>Homepage + all Austin pages</td></tr>
+  </table>
+
+  <p>Each page is internally linked to related services and area pages, creating a strong internal link structure that helps search engines understand your site's authority across all service areas.</p>
+
+  <h2>Image Assets</h2>
+  <p>The site includes <strong>80+ images</strong> sourced from your original website and supplemented with high-quality stock photography:</p>
+  <ul>
+    <li>27 original images from catheyslawncare.com (logos, service photos, hero images)</li>
+    <li>57 professional stock photos organized by service category</li>
+    <li>1 video file (Spectrum News feature on water restrictions)</li>
+  </ul>
+
+  <h2>Hosting & Infrastructure</h2>
+  <table>
+    <tr><th>Component</th><th>Provider</th><th>Cost</th></tr>
+    <tr><td>Website Hosting & CDN</td><td>Netlify</td><td>Included</td></tr>
+    <tr><td>SSL Certificate</td><td>Netlify (auto-renewal)</td><td>Included</td></tr>
+    <tr><td>Serverless Functions</td><td>Netlify Functions</td><td>Included</td></tr>
+    <tr><td>Lead Database</td><td>Netlify Blobs</td><td>Included</td></tr>
+    <tr><td>DNS Management</td><td>GoDaddy (existing) or Netlify</td><td>Existing</td></tr>
+    <tr><td>Code Repository</td><td>GitHub</td><td>Included</td></tr>
+  </table>
+</div>
+
+<div class="page-break"></div>
+
+<!-- PAGE 4: PRICING & NEXT STEPS -->
+<div class="page">
+  <h2>Investment</h2>
+
+  <div class="pricing-box">
+    <h3>Website Rebuild Package</h3>
+    <div class="price-row">
+      <div class="price-item">
+        <span class="amount">$500</span>
+        <span class="period">One-Time Setup</span>
+      </div>
+      <div class="price-item">
+        <span class="amount">$20</span>
+        <span class="period">Per Month Hosting</span>
+      </div>
+    </div>
+    <div class="pricing-note">
+      Includes: 49-page website, lead management system, admin dashboard,<br>
+      SEO optimization, SSL, hosting, ongoing support & maintenance
+    </div>
+  </div>
+
+  <h3>What's Included in the $500 Setup</h3>
+  <ul>
+    <li>Complete website design and development (49 pages)</li>
+    <li>Content writing — 60,000+ words of original SEO content</li>
+    <li>80+ professional images sourced and optimized</li>
+    <li>Lead capture form with admin dashboard</li>
+    <li>XML sitemap and SEO foundation</li>
+    <li>Schema.org structured data markup</li>
+    <li>Mobile-responsive design tested on all devices</li>
+    <li>Custom domain connection (catheyslawncare.com)</li>
+    <li>Google Search Console setup assistance</li>
+  </ul>
+
+  <h3>What's Included in the $20/Month Hosting</h3>
+  <ul>
+    <li>Netlify hosting with global CDN (99.99% uptime)</li>
+    <li>Free automatic SSL certificate renewal</li>
+    <li>Serverless backend for lead processing</li>
+    <li>Lead database storage</li>
+    <li>Email notifications for new leads</li>
+    <li>Ongoing technical support</li>
+    <li>Security updates and monitoring</li>
+    <li>Monthly hosting & infrastructure management</li>
+  </ul>
+
+  <h2>Next Steps</h2>
+  <ol>
+    <li><strong>Review the live site</strong> at <a href="https://catheys-lawn-care.netlify.app">catheys-lawn-care.netlify.app</a></li>
+    <li><strong>Request any changes</strong> — we'll make revisions until you're 100% satisfied</li>
+    <li><strong>Connect your domain</strong> — we'll point catheyslawncare.com to the new site</li>
+    <li><strong>Go live!</strong> — your new website starts generating leads immediately</li>
+    <li><strong>Google Search Console</strong> — we'll submit your sitemap for faster indexing</li>
+  </ol>
+
+  <h2>Admin Dashboard Access</h2>
+  <div class="url-box">
+    <a href="https://catheys-lawn-care.netlify.app/admin">catheys-lawn-care.netlify.app/admin</a>
+    <small>Password: CatheysAdmin2026!</small>
+  </div>
+  <p>This is where you'll manage all incoming leads. You can view new submissions, update their status, add notes, and export everything to a spreadsheet.</p>
+
+  <div class="footer-note">
+    <strong>Advanced Marketing</strong> — Premium Website Design & Digital Marketing<br>
+    ben@advancedmarketing.co | advancedmarketing.co<br><br>
+    This proposal was prepared exclusively for Cathey's Lawn Care. &copy; 2026 Advanced Marketing.
+  </div>
+</div>
+
+</body>
+</html>
